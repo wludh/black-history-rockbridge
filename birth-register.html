@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Black History in Rockbridge County</title>
+    <title>Black History in Rockbridge County - Rockbridge Birth Register, 1853-1862</title>
     <meta name="author" content="Larry Spurgeon, Cinder Stanton, Lori Wood, Adam Lewis, Andy Langeland">
     <meta content="Black History in Rockbridge County" />
 
@@ -69,8 +69,11 @@
 
 
 <div class="container">
-<p>
-This spreadsheet identifies the names of enslaved people in Rockbridge County who were emancipated from the county's formation in 1778 to the end of the Civil War in 1865. The information comes from deed books, will books, the registers of "Free Negroes" in the circuit court records, and other sources.</p>
+<h1>Rockbridge Birth Register, 1853-1862</h1>
+<h2>Larry Spurgeon (2021)</h2>
+<p>Virginia began requiring the registration of births and deaths at the county level in 1853. While citizens did not always comply with the requirement, many births and deaths were recorded in Rockbridge County, including the births and deaths of enslaved people. This spreadsheet compiles the reported births for Black people in Rockbridge from 1853 through 1862.</p>
+
+
 <div class="text-center brick">
 <img src="/images/smallbrick.png" class="img-fluid" alt="small brick decoration">
 </div>
@@ -121,14 +124,13 @@ This spreadsheet identifies the names of enslaved people in Rockbridge County wh
       }
 
       CsvToHtmlTable.init({
-        csv_path: 'data/Emancipations-of-Enslaved-People-in-Rockbridge-County-1778-1865.csv',
+        csv_path: 'data/Rockbridge-Birth-Register-1853-1862-Black-births.csv',
         element: 'table-container', 
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
         datatables_options: {"paging": true,
                             "autoWidth":true,
                               },
-        custom_formatting: [[16, format_link]]
       });
     </script>
   </body>

@@ -69,8 +69,58 @@
 
 
 <div class="container">
-<p>
-This spreadsheet identifies the names of enslaved people in Rockbridge County who were emancipated from the county's formation in 1778 to the end of the Civil War in 1865. The information comes from deed books, will books, the registers of "Free Negroes" in the circuit court records, and other sources.</p>
+<h1>Free Black People in Rockbridge, 1778-1865</h1>
+<h2>Larry Spurgeon (2020)</h2>
+
+<p>This spreadsheet lists the names of all the free Black people in Rockbridge County records during the time of slavery. More than 1,100 people are included.</p>
+
+<h3>Notes on Data</h3>
+
+<p>Because of scant information, poor handwriting, and erratic spelling, some names are very difficult to discern.  For searchability, I have used spellings that are the most likely to be accurate.  For example, I have used the surname "Empy" for people who are listed by that spelling as well as Ampy, Empty, etc.  Birth dates and ages are often very rough estimates because early censuses used only age ranges, and censuses are often inaccurate. - Larry Spurgeon</p>
+
+<table class="table">
+  <tbody class="table-striped">
+        <td>KEY</td>
+        <td>SOURCES</td>
+    </tr>
+    <tr>
+        <td>B</td>
+        <td>Birth records from the Birth Register, 1853-1870, in the Rockbridge County Clerk of Court&#39;s office</td>
+    </tr>
+    <tr>
+        <td>C</td>
+        <td>United States Census, from <a href="https://www.ancestry.com/">ancestry.com</a>.  The censuses before 1850 show only the names of heads of household.  All other members of the household are shown by gender and age range.  From 1850 on, all members of the household are listed by name and specific age, though there are many errors.</td>
+    </tr>
+    <tr>
+        <td>D</td>
+        <td>Death records come from several sources: Rockbridge County Death Register, 1853-1870 (Clerk of Court&#39;s office); Virginia Death Certificates, 1912-2014 (ancestry.com); and Virginia Deaths and Burial Index, 1853-1917 (<a href="https://www.ancestry.com/">ancestry.com</a>).  Some death dates come from newspaper obituaries (<a href="https://www.newspapers.com/">newspapers.com</a>).</td>
+    </tr>
+    <tr>
+        <td>E</td>
+        <td>Emancipation information can come from Wills, Deeds, and some other records.  Because Wills are indexed by the name of the testator, it is very difficult to locate emancipation references.  Most of the emancipation information in this document are from the original deeds in the Clerk of Court&#39;s office.  Some information comes from the Library of Virginia website, under Virginia Memor, and &quot;Unknown No Longer.&quot;</td>
+    </tr>
+    <tr>
+        <td>FG</td>
+        <td><a href="https://www.findagrave.com/">Findagrave.com</a> is a wonderful resource for locating graves, so long as the tombstones are legible.  </td>
+    </tr>
+    <tr>
+        <td>M</td>
+        <td>Rockbridge County marriage records are in the Clerk of Court&#39;s office, but most of the entries in this document come from marriage data bases on <a href="https://www.ancestry.com/">ancestry.com</a>.</td>
+    </tr>
+    <tr>
+        <td>PP</td>
+        <td>Personal property tax records were reported annually, and maintained by the county.  The records for the years 1782-1821, are available online at: <a href="https://freeafricanamericans.com/Rockbridge.htm">http://www.freeafricanamericans.com/Rockbridge.htm</a>.  For the years after 1822, the original books are in the Clerk of the Court&#39;s office, but kept in a locked room, so staff must retrieve them for use.</td>
+    </tr>
+    <tr>
+        <td>R</td>
+        <td>Virginia law required free blacks to register in the county of residence every five years.  In Rockbridge County registration was very erratic, for a variety of reasons.  Some of the registration information came from the Library of Virginia Website for Virginia Memory, <a href="https://lva.primo.exlibrisgroup.com/discovery/search?vid=01LVA_INST:VU">Unknown No Longer</a>, but most of it came from the registration images sent to us by Bob Vernon.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr></tbody>
+</table>
+
 <div class="text-center brick">
 <img src="/images/smallbrick.png" class="img-fluid" alt="small brick decoration">
 </div>
@@ -121,14 +171,13 @@ This spreadsheet identifies the names of enslaved people in Rockbridge County wh
       }
 
       CsvToHtmlTable.init({
-        csv_path: 'data/Emancipations-of-Enslaved-People-in-Rockbridge-County-1778-1865.csv',
+        csv_path: 'data/Free-Black-People-in-Rockbridge-1778-1865.csv',
         element: 'table-container', 
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
         datatables_options: {"paging": true,
                             "autoWidth":true,
                               },
-        custom_formatting: [[16, format_link]]
       });
     </script>
   </body>

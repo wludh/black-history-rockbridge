@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Black History in Rockbridge County</title>
+    <title>Black History in Rockbridge County - Qualified Colored Electors - Rockbridge County, 1867</title>
     <meta name="author" content="Larry Spurgeon, Cinder Stanton, Lori Wood, Adam Lewis, Andy Langeland">
     <meta content="Black History in Rockbridge County" />
 
@@ -69,8 +69,11 @@
 
 
 <div class="container">
-<p>
-This spreadsheet identifies the names of enslaved people in Rockbridge County who were emancipated from the county's formation in 1778 to the end of the Civil War in 1865. The information comes from deed books, will books, the registers of "Free Negroes" in the circuit court records, and other sources.</p>
+<h1>Qualified Colored Electors - Rockbridge County, 1867</h1>
+<h2>Larry Spurgeon (2020)</h2>
+<p>After the Civil War, federal law set out a procedure for Confederate states to be readmitted - and that included adopting a new constitution that outlawed slavery, among other things. In 1867, an election was held in Virginia to select delegates to a state constitutional convention. Black men age 21 and older, who had been residents of a county for at least one year, were qualified to vote. In Rockbridge County, nearly 1,000 Black men registered to vote. This spreadsheet lists them by name and district.</p>
+
+
 <div class="text-center brick">
 <img src="/images/smallbrick.png" class="img-fluid" alt="small brick decoration">
 </div>
@@ -121,14 +124,13 @@ This spreadsheet identifies the names of enslaved people in Rockbridge County wh
       }
 
       CsvToHtmlTable.init({
-        csv_path: 'data/Emancipations-of-Enslaved-People-in-Rockbridge-County-1778-1865.csv',
+        csv_path: 'data/Qualified-Colored-Electors-1867-Rockbridge-County.csv',
         element: 'table-container', 
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
         datatables_options: {"paging": true,
                             "autoWidth":true,
                               },
-        custom_formatting: [[16, format_link]]
       });
     </script>
   </body>

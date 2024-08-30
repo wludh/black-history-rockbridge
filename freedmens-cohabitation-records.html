@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Black History in Rockbridge County</title>
+    <title>Black History in Rockbridge County - Freedmen's Co-Habitation Records - Rockbridge County</title>
     <meta name="author" content="Larry Spurgeon, Cinder Stanton, Lori Wood, Adam Lewis, Andy Langeland">
     <meta content="Black History in Rockbridge County" />
 
@@ -69,8 +69,12 @@
 
 
 <div class="container">
+<h1>Freedmen's Co-Habitation Records - Rockbridge County</h1>
+<h2>Larry Spurgeon (2020)</h2>
 <p>
-This spreadsheet identifies the names of enslaved people in Rockbridge County who were emancipated from the county's formation in 1778 to the end of the Civil War in 1865. The information comes from deed books, will books, the registers of "Free Negroes" in the circuit court records, and other sources.</p>
+Enslaved people could not marry under Virginia law, though they often were married through custom and ceremonies. After emancipation in 1865, the United States Freedmen's Bureau encouraged formerly enslaved people to register their relationships, to formalize their marriages. The Rockbridge registrations were in 1866 and 1867, and the entries identify both spouses, their ages and places of birth, how long they had been a couple, and the names and ages of their children.</p>
+
+
 <div class="text-center brick">
 <img src="/images/smallbrick.png" class="img-fluid" alt="small brick decoration">
 </div>
@@ -121,14 +125,13 @@ This spreadsheet identifies the names of enslaved people in Rockbridge County wh
       }
 
       CsvToHtmlTable.init({
-        csv_path: 'data/Emancipations-of-Enslaved-People-in-Rockbridge-County-1778-1865.csv',
+        csv_path: 'data/Freedmens-Co-Habitation-Records-Rockbridge-County.csv',
         element: 'table-container', 
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
         datatables_options: {"paging": true,
                             "autoWidth":true,
                               },
-        custom_formatting: [[16, format_link]]
       });
     </script>
   </body>

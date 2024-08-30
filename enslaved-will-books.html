@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Black History in Rockbridge County</title>
+    <title>Black History in Rockbridge County - Enslaved People Identified in Rockbridge County Will Books, 1778-1865</title>
     <meta name="author" content="Larry Spurgeon, Cinder Stanton, Lori Wood, Adam Lewis, Andy Langeland">
     <meta content="Black History in Rockbridge County" />
 
@@ -69,8 +69,20 @@
 
 
 <div class="container">
+  <h1>Enslaved People Identified in Rockbridge County Will Books, 1778-1865</h1>
+  <h2>Larry Spurgeon, Cinder Stanton, Lori Wood (2024) </h2>
 <p>
-This spreadsheet identifies the names of enslaved people in Rockbridge County who were emancipated from the county's formation in 1778 to the end of the Civil War in 1865. The information comes from deed books, will books, the registers of "Free Negroes" in the circuit court records, and other sources.</p>
+The names of enslaved people were rarely mentioned in public records – not even censuses included names. One of the few exceptions is found in the will books for the Rockbridge County Circuit Court. Wills often mentioned enslaved people by name, and estates of all deceased persons were to be appraised for the values of personal property – and enslaved people were personal property. This project involved the review of Rockbridge will books from the county’s formation in 1778 through the end of the Civil War in 1865. The spreadsheet lists all the references to enslaved people, the names of the people who own them, and other pertinent information. About 4,750 enslaved names are included.</p>
+
+<h3>Notes on Data</h3>
+<ul>
+  <li>Approximate birth year is calculated using year of source document and age of enslaved person.</li>
+  <li>If a child's age is less than one year, 1 is entered as age.</li>
+  <li>Jr. Sr. Rev. are excluded from names, but will be included in notes to disambiguate individuals.</li>
+  <li>The units of account in colonial times were pounds, shillings, and pence (1£ = 20s., 1s. = 12d.)</li>
+</ul>
+
+
 <div class="text-center brick">
 <img src="/images/smallbrick.png" class="img-fluid" alt="small brick decoration">
 </div>
@@ -121,14 +133,13 @@ This spreadsheet identifies the names of enslaved people in Rockbridge County wh
       }
 
       CsvToHtmlTable.init({
-        csv_path: 'data/Emancipations-of-Enslaved-People-in-Rockbridge-County-1778-1865.csv',
+        csv_path: 'data/Enslaved-People-Identified-in-Rockbridge-County-Will-Books-1778-1865.csv',
         element: 'table-container', 
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
         datatables_options: {"paging": true,
                             "autoWidth":true,
                               },
-        custom_formatting: [[16, format_link]]
       });
     </script>
   </body>
