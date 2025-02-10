@@ -18,6 +18,10 @@ footer a {
 .container {
   margin-top: 3em;
 }
+footer p {
+  color: #fff;
+}
+
 h1 {
   font: 32px/1em 'Helvetica', sans-serif;
 
